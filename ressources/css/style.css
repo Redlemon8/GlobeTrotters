@@ -36,20 +36,6 @@ html {
     width: 100%;
 }
 
-.search-bar input[type="text"] {
-    border-radius: 20px;
-    height: 2rem;
-    border: 1px solid rgb(92, 21, 207);
-    width: 100%;
-}
-
-
-/* Non fonctionel a voir plus tard */
-
-.search-bar input[type="text"]::placeholder {
-    margin-left: 2rem;
-    font-family: 'Helvetica', 'Arial', sans-serif;
-}
 
 /* --------------- */
 
@@ -280,6 +266,7 @@ input[type="email"]::placeholder {
     color: rgb(112, 32, 240);
     margin-bottom: 20px;
     text-shadow: 3px 3px 5px black;
+    text-align: center;
 }
 
 .form-container input {
@@ -302,6 +289,7 @@ input[type="email"]::placeholder {
     display: flex;
     flex-direction: column;
     width: 50%;
+    font-size: 1.2rem;
 }
 
 .first-name {
@@ -309,6 +297,7 @@ input[type="email"]::placeholder {
     flex-direction: column;
     width: 50%;
     right: 0;
+    font-size: 1.2rem;
 }
 
 .first-name input {
@@ -324,6 +313,8 @@ input[type="email"]::placeholder {
 input[type="text"]::placeholder {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: lighter;
+    font-size: 1.2rem;
+    left: 2rem;
 }
 
 input[type="email"]::placeholder {
@@ -342,6 +333,11 @@ input[type="password"]::placeholder {
     color:rgb(92, 21, 207);
     font-weight: normal;
     height: 50px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 1.2rem;
 }
 
 .email {
@@ -397,6 +393,12 @@ input[type="password"]::placeholder {
     border-radius: 20px;
     color: white;
     cursor: pointer;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .btn {
