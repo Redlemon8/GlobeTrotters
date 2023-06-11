@@ -15,7 +15,7 @@ class user {
     }
 
     validInscription() {
-        if (!this.name || this.firstName || !this.email || !this.password) {
+        if (!this.name || !this.firstName || !this.email || !this.password) {
             console.log("Veuillez remplir tous les champs.");
         }
     
