@@ -44,7 +44,7 @@ html {
     padding-left: 1rem;
     color: rgb(92, 21, 207);
     font-family: 'Helvetica', 'Arial', sans-serif;
-    width: 30%;
+    width: 40%;
 }
 
 Input[type="text"]::placeholder {
@@ -72,13 +72,111 @@ Input[type="text"]::placeholder {
     color: rgb(92, 21, 207);
 }
 
-/* MAIN */
 
-.middle {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+/* MAIN LEFT*/
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
+.left {
+    padding-top: 1rem;
+    margin-left: 1rem;
+    width: 23%;
+    height: 800px;
+    font-family: 'Helvetica', 'Arial' sans-serif;
+    color:rgb(92, 21, 207);
+    border-right: 2px solid rgb(92, 21, 207);
+
+}
+
+.first, .second, .third{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.left img {
+    margin-right: 0.5rem;
+}
+
+.left a, .right a {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* MAIN MIDDLE */
+
+
+.middle {
+    width: 50%;
+    font-size: 1.2rem;
+    font-family: 'Helvetica', 'Arial' sans-serif;
+    color:rgb(92, 21, 207);
+}
+
+.search-bar-mood input{
+    border-radius: 20px;
+    height: 2rem;
+    border: 2px solid rgb(92, 21, 207);
+    font-size: 1rem;
+    padding-left: 1rem;
+    color: rgb(92, 21, 207);
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    width: 95%;
+}
+
+.live, .addVids, .activities {
+    border-radius: 15px;
+    width: 31.6%;
+    height: 3.5rem;
+    margin-bottom: 2rem;
+    font-family: 'Helvetica', 'Arial' sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(92, 21, 207);
+}
+
+.button-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block {
+    border: 2px solid rgb(92, 21, 207);
+    padding: 2rem 0.5rem;
+    margin: 2rem 1rem;
+    border-radius: 2%;
+}
+
+.block-activities {
+    border: 2px solid rgb(92, 21, 207);
+    padding: 2rem 0.5rem;
+    margin: 2rem 1rem;
+    border-radius: 2%;
+    min-height: 6rem;
+}
+
+
+/* MAIN RIGHT */
+
+.right {
+    width: 23%;
+    height: 800px;
+    border-left: 2px solid rgb(92, 21, 207);
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    color: rgb(92, 21, 207);
+}
+
+    .right a{
+        padding: 0 1rem;
+
+    }
 /* log_in.html*/
 
 /* background*/
@@ -89,7 +187,7 @@ Input[type="text"]::placeholder {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('resources/images/Seychelles.jpg') no-repeat center center fixed;
+    background: url('ressources/images/Seychelles.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -256,7 +354,7 @@ input[type="email"]::placeholder {
     top: 50px;
     left: 20%;
     width: 800px;
-    height: 620px;
+    height: 680px;
     border: 2px solid rgb(153, 90, 255);
     box-shadow: 15px 15px 21px -9px black;
     z-index: 9;
@@ -267,7 +365,7 @@ input[type="email"]::placeholder {
 .form-container {
     border-radius: 20px;
     max-width: 800px;
-    height: 600px;
+    height: 660px;
     padding: 10px;
     background: transparent;
     backdrop-filter: blur(10px);
@@ -325,6 +423,38 @@ input[type="email"]::placeholder {
     left: 70px;
 }
 
+.information {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 90%;
+}
+
+.userName {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-size: 1.2rem;
+}
+
+.birthDate {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    right: 0;
+    font-size: 1.2rem;
+}
+
+.birthDate input {
+    position: relative;
+    left: 70px;
+}
+
+.birthDate label {
+    position: relative;
+    left: 70px;
+}
+
 input[type="text"]::placeholder {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: lighter;
@@ -336,14 +466,16 @@ input[type="email"]::placeholder {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: lighter;
     font-size: 1.2rem;
+    color: rgb(92, 21, 207);
 }
 
 input[type="password"]::placeholder {
     padding: 0;
     font-size: 1.2rem;
+    color: rgb(92, 21, 207);
 }
 
-.name input, .first-name input {
+.name input, .first-name input, .userName input, .birthDate input {
     font-family: Helvetica, Arial, sans-serif;
     color:rgb(92, 21, 207);
     font-weight: normal;
@@ -360,6 +492,10 @@ input[type="password"]::placeholder {
     flex-direction: column;
     margin-top: 20px;
     width: 90%;
+}
+
+.email label {
+    font-size: 1.2rem;
 }
 
 .email input {
@@ -400,6 +536,10 @@ input[type="password"]::placeholder {
     padding: 12px 20px;
     width: 94%;
     background-color: rgba(255, 255, 255, 0.4);
+}
+
+.password label {
+    font-size: 1.2rem;
 }
 
 
